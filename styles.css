@@ -8,12 +8,25 @@
 }
 
 body {
-    background-color: #FFFAFA;
-    color: #082A3A;
+  background-color: #FFFAFA;
+  color: #082A3A;
+   /* background: linear-gradient(0deg, #ffffff, #96f5fc, #00e6f6, #1c5973, #041f2b);*/
+}
+
+footer {
+  height: 40px;
+  background-color: #041f2b;
+  color: #FFF;
 }
 
 nav {
     background-color: #041f2b;
+}
+
+nav p {
+  font-size: 2rem;
+  color: white;
+  margin: auto;
 }
 
 span{
@@ -21,16 +34,17 @@ span{
     font-weight: 600;
 }
 
+
 button {
-    position: relative;
-    border: none;
-    border-radius: 12px;
-    transition: .4s ease-in;
-    z-index: 1;
-    background-color: #041f2b;
-    width: 140px;
-    height: 50px;
-    
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  transition: .4s ease-in;
+  z-index: 1;
+  background-color: transparent;
+  width: 140px;
+  height: 50px;
+  
     font-weight: 600;
     color: white;
   }
@@ -40,7 +54,7 @@ button {
     content: "";
     z-index: -1;
   }
-
+  
   button::after {
     color: black;
   }
@@ -48,20 +62,20 @@ button {
   .btn-Form {
     background-color: #041f2b;
   }
-
+  
   .btn-1:hover, .btn-Form:hover {
     background: #00E6F6;
     /*box-shadow: 0 0 5px #00E6F6, 0 0 25px #00E6F6, 0 0 50px #00E6F6, 0 0 200px #00E6F6;*/
     color: black;
   }
-
+  
   .btn-2:hover {
     /*border-color: transparent;
     border-bottom: #00E6F6;
     border-style: solid;*/
     color: #00E6F6;
   }
-
+  
   .btn-3:hover {
     box-shadow: 10px 10px 0px #00E6F6;
     top: -5px;
@@ -69,12 +83,12 @@ button {
     border: #00E6F6;
     border-style: solid;
   }
-
-.card {
+  
+  .card {
     background: #082A3A;
     color: #fff;
   }
-
+  
 
 .card:hover {
     transform: translate3D(0,-1px,0) scale(1.07);
@@ -84,15 +98,21 @@ button {
     background: #fff;
     color: #082A3A;
   }
-
-.imgGrid {
-    width: 600px;
-    height: 350px;
+  
+  .imgGrid {
+    width: 700px;
+    height: 400px;
     margin: auto;
     border-radius: 10%;
   }
-
-.active {
+  
+  .imgGrid, video {
+    box-shadow: 0px 0px 154px 8px rgba(4,31,43,0.64);
+  -webkit-box-shadow: 0px 0px 154px 8px rgba(4,31,43,0.64);
+  -moz-box-shadow: 0px 0px 154px 8px rgba(4,31,43,0.64);
+  }
+  
+  .active {
     color: #00E6F6;
   }
 
@@ -116,3 +136,43 @@ button {
   {
     transform: scale(0.5) translateY(-15px);
   }
+
+#experienciaText {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+#videoHover:hover {
+    transform: translate3D(0,-1px,0) scale(1.07);
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.divisor::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: #00E6F6;
+  position: absolute;
+  top: calc(79.5% - 3px);
+  z-index: 0;
+}
+
+.divisor-btn {
+  width: 500px;
+  background-color: transparent;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: relative;
+}
+
+.divisor-btn button {
+  color: #00E6F6;
+  width: 300px;
+  height: 100px;
+  background-color: #041f2b;
+}
