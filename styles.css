@@ -19,8 +19,21 @@ footer {
   color: #FFF;
 }
 
-nav {
+.scroll-nav{
+  background-color: #FFFAFA;
+  transition: background-color 0.5s ease-in-out;
+}
+.nav-claro{
+  font-size: 1.2em;
+}
+.nav-claro button, .nav-claro p {
+  color: #041f2b;
+  text-shadow: 0px 0px 50px #082A3A;
+}
+
+.nav-oscuro {
     background-color: #041f2b;
+    transition: background-color 0.5s ease-in-out;
 }
 
 nav p {
@@ -30,8 +43,8 @@ nav p {
 }
 
 span{
-    color: #082A3A;
-    font-weight: 600;
+  color: #082A3A;
+  font-weight: 600;
 }
 
 
@@ -45,10 +58,11 @@ button {
   width: 140px;
   height: 50px;
   
-    font-weight: 600;
-    color: white;
-  }
-  
+  font-weight: 600;
+  color: white;
+}
+
+
   button::before, button::after {
     position: absolute;
     content: "";
@@ -149,15 +163,15 @@ button {
     cursor: pointer;
 }
 
-.divisor::before {
+/*.divisor::before {
   content: "";
   width: 100%;
   height: 8px;
-  background-color: #00E6F6;
+  background-color: #082A3A;
   position: absolute;
   top: calc(79.5% - 3px);
   z-index: 0;
-}
+}*/
 
 .divisor-btn {
   width: 500px;
@@ -171,8 +185,19 @@ button {
 }
 
 .divisor-btn button {
-  color: #00E6F6;
+  background: #082A3A;
+  color: #FFFAFA;
   width: 300px;
   height: 100px;
-  background-color: #041f2b;
+  font-size: 1.3em;
+}
+
+.divisor-btn button:hover {
+  transform: translate3D(0,-1px,0) scale(1.07);
+  box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+  transition: all .4s ease;
+  cursor: pointer;
+  background: #00E6F6;
+  color: #082A3A;
+  letter-spacing: 6px;
 }
